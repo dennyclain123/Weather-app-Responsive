@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body{
+    background-color: #d6d7db;
+     font-family: 'Quicksand', sans-serif;
+     letter-spacing: 1px;
+}
+.main{
+    border-radius: 15px;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.4);
+    margin: 25px;
+}
+.ico{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
