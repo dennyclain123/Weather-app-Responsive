@@ -33,7 +33,23 @@ router.get('/', (req, res) => {
         cloud_percent: null,
         sea_level: null,
         grnd_level: null,
-        visibility: null
+        visibility: null,
+        hourly_temp_1: null, 
+        hourly_icon_1: null,
+        hourly_temp_2: null, 
+        hourly_icon_2: null,
+        hourly_temp_3: null, 
+        hourly_icon_3: null,
+        hourly_temp_4: null, 
+        hourly_icon_4: null,
+        hourly_temp_5: null, 
+        hourly_icon_5: null,
+        hourly_temp_6: null, 
+        hourly_icon_6: null,
+        hourly_temp_7: null, 
+        hourly_icon_7: null,
+        hourly_temp_8: null, 
+        hourly_icon_8: null,
     });
 });
 
@@ -77,7 +93,23 @@ router.post('/', async (req, res) => {
                         cloud_percent: null,
                         sea_level: null,
                         grnd_level: null,
-                        visibility: null
+                        visibility: null,
+                        hourly_temp_1: null, 
+                        hourly_icon_1: null,
+                        hourly_temp_2: null, 
+                        hourly_icon_2: null,
+                        hourly_temp_3: null, 
+                        hourly_icon_3: null,
+                        hourly_temp_4: null, 
+                        hourly_icon_4: null,
+                        hourly_temp_5: null, 
+                        hourly_icon_5: null,
+                        hourly_temp_6: null, 
+                        hourly_icon_6: null,
+                        hourly_temp_7: null, 
+                        hourly_icon_7: null,
+                        hourly_temp_8: null, 
+                        hourly_icon_8: null,
                     })
                 } else {
                     //Left pane and location
@@ -90,16 +122,16 @@ router.post('/', async (req, res) => {
                     //7 days forecast
                     const first_day_icon = data.list[0].weather[0].icon
                     const first_day_temp = Math.round(data.list[0].main.temp);
-                    const second_day_icon = data.list[5].weather[0].icon
-                    const second_day_temp = Math.round(data.list[5].main.temp);
-                    const third_day_icon = data.list[12].weather[0].icon
-                    const third_day_temp = Math.round(data.list[12].main.temp);
-                    const fourth_day_icon = data.list[24].weather[0].icon
-                    const fourth_day_temp = Math.round(data.list[24].main.temp);
-                    const fifth_day_icon = data.list[33].weather[0].icon
-                    const fifth_day_temp = Math.round(data.list[33].main.temp);
-                    const sixth_day_icon = data.list[38].weather[0].icon
-                    const sixth_day_temp = Math.round(data.list[38].main.temp);
+                    const second_day_icon = data.list[8].weather[0].icon
+                    const second_day_temp = Math.round(data.list[8].main.temp);
+                    const third_day_icon = data.list[15].weather[0].icon
+                    const third_day_temp = Math.round(data.list[15].main.temp);
+                    const fourth_day_icon = data.list[22].weather[0].icon
+                    const fourth_day_temp = Math.round(data.list[22].main.temp);
+                    const fifth_day_icon = data.list[30].weather[0].icon
+                    const fifth_day_temp = Math.round(data.list[30].main.temp);
+                    const sixth_day_icon = data.list[36].weather[0].icon
+                    const sixth_day_temp = Math.round(data.list[36].main.temp);
                     const seventh_day_icon = data.list[24].weather[0].icon
                     const seventh_day_temp = Math.round(data.list[24].main.temp);
                     //Feels like Temperature with min and max  
@@ -119,12 +151,30 @@ router.post('/', async (req, res) => {
                     const sea_level = data.list[0].main.sea_level
                     const grnd_level = data.list[0].main.grnd_level
                     const visibility = data.list[0].visibility
+                    const hourly_temp_1 = Math.round(data.list[0].main.temp);
+                    const hourly_icon_1 = data.list[0].weather[0].icon
+                    const hourly_temp_2 = Math.round(data.list[1].main.temp);
+                    const hourly_icon_2 = data.list[1].weather[0].icon
+                    const hourly_temp_3 = Math.round(data.list[2].main.temp);
+                    const hourly_icon_3 = data.list[2].weather[0].icon
+                    const hourly_temp_4 = Math.round(data.list[3].main.temp);
+                    const hourly_icon_4 = data.list[3].weather[0].icon
+                    const hourly_temp_5 = Math.round(data.list[4].main.temp);
+                    const hourly_icon_5 = data.list[4].weather[0].icon
+                    const hourly_temp_6 = Math.round(data.list[5].main.temp);
+                    const hourly_icon_6 = data.list[5].weather[0].icon
+                    const hourly_temp_7 = Math.round(data.list[6].main.temp);
+                    const hourly_icon_7 = data.list[6].weather[0].icon
+                    const hourly_temp_8 = Math.round(data.list[7].main.temp);
+                    const hourly_icon_8 = data.list[7].weather[0].icon
                     res.render('index', {
                         city, des, icon, temp, country, humidity, first_day_icon, first_day_temp, second_day_icon, second_day_temp,
                         third_day_icon, third_day_temp, fourth_day_icon, fourth_day_temp, fifth_day_icon, fifth_day_temp,
                         sixth_day_icon, sixth_day_temp, seventh_day_icon, seventh_day_temp,
                         feels_like, temp_min, temp_max, wind_speed, wind_deg, weather_condition, pressure, cloud_percent,
-                        sea_level,grnd_level,visibility
+                        sea_level,grnd_level,visibility, hourly_temp_1, hourly_icon_1,hourly_temp_2, hourly_icon_2,
+                        hourly_temp_3, hourly_icon_3,hourly_temp_4, hourly_icon_4,hourly_temp_5, hourly_icon_5,
+                        hourly_temp_6, hourly_icon_6,hourly_temp_7, hourly_icon_7, hourly_icon_8, hourly_temp_8
                     });
                 }
             }
@@ -162,7 +212,23 @@ router.post('/', async (req, res) => {
             cloud_percent: null,
             sea_level: null,
             grnd_level: null,
-            visibility: null
+            visibility: null,
+            hourly_temp_1: null, 
+            hourly_icon_1: null,
+            hourly_temp_2: null, 
+            hourly_icon_2: null,
+            hourly_temp_3: null, 
+            hourly_icon_3: null,
+            hourly_temp_4: null, 
+            hourly_icon_4: null,
+            hourly_temp_5: null, 
+            hourly_icon_5: null,
+            hourly_temp_6: null, 
+            hourly_icon_6: null,
+            hourly_temp_7: null, 
+            hourly_icon_7: null,
+            hourly_temp_8: null, 
+            hourly_icon_8: null,
         })
     }
 
