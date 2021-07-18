@@ -18,7 +18,7 @@ body{
     font-size: x-small;
 }
 #city{
-    font-size: x-small;
+    font-size: small;
 }
 #des{
     font-size: x-small;
@@ -42,9 +42,10 @@ body{
 }
 
 .content {
-    padding: 20px;
+    /* padding: 10px; */
     border-top: 0 none;
     min-height: 200px;
+    margin-top: 15px;
 }
 
 #tab2 {
