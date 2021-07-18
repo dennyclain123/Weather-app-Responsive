@@ -572,31 +572,31 @@
     </div>
     <script>
         var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth() + 1;
+        var dd = today.getDate();
+        var mm = today.getMonth() + 1;
 
-var yyyy = today.getFullYear();
-if (dd < 10) {
-    dd = '0' + dd;
-}
-if (mm < 10) {
-    mm = '0' + mm;
-}
-var today = dd + '/' + mm + '/' + yyyy;
-document.getElementById("demo").innerHTML = today;
-document.querySelector("#tab1").onclick = function () {
-    document.querySelector("#tab1").style.opacity = 1;
-    document.querySelector("#tab2").style.opacity = 0.5;
-    document.querySelector("#content1").style.display = "block";
-    document.querySelector("#content2").style.display = "none";
-}
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd;
+        }
+        if (mm < 10) {
+            mm = '0' + mm;
+        }
+        var today = dd + '/' + mm + '/' + yyyy;
+        document.getElementById("demo").innerHTML = today;
+        document.querySelector("#tab1").onclick = function () {
+            document.querySelector("#tab1").style.opacity = 1;
+            document.querySelector("#tab2").style.opacity = 0.5;
+            document.querySelector("#content1").style.display = "block";
+            document.querySelector("#content2").style.display = "none";
+        }
 
-document.querySelector("#tab2").onclick = function () {
-    document.querySelector("#tab1").style.opacity = 0.5;
-    document.querySelector("#tab2").style.opacity = 1;
-    document.querySelector("#content1").style.display = "none";
-    document.querySelector("#content2").style.display = "block";
-}
+        document.querySelector("#tab2").onclick = function () {
+            document.querySelector("#tab1").style.opacity = 0.5;
+            document.querySelector("#tab2").style.opacity = 1;
+            document.querySelector("#content1").style.display = "none";
+            document.querySelector("#content2").style.display = "block";
+        }
     </script>
 </body>
 

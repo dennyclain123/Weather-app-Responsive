@@ -34,21 +34,21 @@ router.get('/', (req, res) => {
         sea_level: null,
         grnd_level: null,
         visibility: null,
-        hourly_temp_1: null, 
+        hourly_temp_1: null,
         hourly_icon_1: null,
-        hourly_temp_2: null, 
+        hourly_temp_2: null,
         hourly_icon_2: null,
-        hourly_temp_3: null, 
+        hourly_temp_3: null,
         hourly_icon_3: null,
-        hourly_temp_4: null, 
+        hourly_temp_4: null,
         hourly_icon_4: null,
-        hourly_temp_5: null, 
+        hourly_temp_5: null,
         hourly_icon_5: null,
-        hourly_temp_6: null, 
+        hourly_temp_6: null,
         hourly_icon_6: null,
-        hourly_temp_7: null, 
+        hourly_temp_7: null,
         hourly_icon_7: null,
-        hourly_temp_8: null, 
+        hourly_temp_8: null,
         hourly_icon_8: null,
     });
 });
@@ -87,28 +87,28 @@ router.post('/', async (req, res) => {
                         temp_min: null,
                         temp_max: null,
                         wind_speed: null,
-                        wind_deg: null, 
+                        wind_deg: null,
                         weather_condition: null,
                         pressure: null,
                         cloud_percent: null,
                         sea_level: null,
                         grnd_level: null,
                         visibility: null,
-                        hourly_temp_1: null, 
+                        hourly_temp_1: null,
                         hourly_icon_1: null,
-                        hourly_temp_2: null, 
+                        hourly_temp_2: null,
                         hourly_icon_2: null,
-                        hourly_temp_3: null, 
+                        hourly_temp_3: null,
                         hourly_icon_3: null,
-                        hourly_temp_4: null, 
+                        hourly_temp_4: null,
                         hourly_icon_4: null,
-                        hourly_temp_5: null, 
+                        hourly_temp_5: null,
                         hourly_icon_5: null,
-                        hourly_temp_6: null, 
+                        hourly_temp_6: null,
                         hourly_icon_6: null,
-                        hourly_temp_7: null, 
+                        hourly_temp_7: null,
                         hourly_icon_7: null,
-                        hourly_temp_8: null, 
+                        hourly_temp_8: null,
                         hourly_icon_8: null,
                     })
                 } else {
@@ -140,7 +140,7 @@ router.post('/', async (req, res) => {
                     const temp_max = data.list[0].main.temp_max
                     //Wind Speed and Degree
                     const wind_speed = data.list[0].wind.speed
-                    const wind_deg =  data.list[0].wind.deg
+                    const wind_deg = data.list[0].wind.deg
                     //Weather Condition
                     const weather_condition = data.list[0].weather[0].main
                     //Pressure
@@ -172,9 +172,9 @@ router.post('/', async (req, res) => {
                         third_day_icon, third_day_temp, fourth_day_icon, fourth_day_temp, fifth_day_icon, fifth_day_temp,
                         sixth_day_icon, sixth_day_temp, seventh_day_icon, seventh_day_temp,
                         feels_like, temp_min, temp_max, wind_speed, wind_deg, weather_condition, pressure, cloud_percent,
-                        sea_level,grnd_level,visibility, hourly_temp_1, hourly_icon_1,hourly_temp_2, hourly_icon_2,
-                        hourly_temp_3, hourly_icon_3,hourly_temp_4, hourly_icon_4,hourly_temp_5, hourly_icon_5,
-                        hourly_temp_6, hourly_icon_6,hourly_temp_7, hourly_icon_7, hourly_icon_8, hourly_temp_8
+                        sea_level, grnd_level, visibility, hourly_temp_1, hourly_icon_1, hourly_temp_2, hourly_icon_2,
+                        hourly_temp_3, hourly_icon_3, hourly_temp_4, hourly_icon_4, hourly_temp_5, hourly_icon_5,
+                        hourly_temp_6, hourly_icon_6, hourly_temp_7, hourly_icon_7, hourly_icon_8, hourly_temp_8
                     });
                 }
             }
@@ -213,21 +213,21 @@ router.post('/', async (req, res) => {
             sea_level: null,
             grnd_level: null,
             visibility: null,
-            hourly_temp_1: null, 
+            hourly_temp_1: null,
             hourly_icon_1: null,
-            hourly_temp_2: null, 
+            hourly_temp_2: null,
             hourly_icon_2: null,
-            hourly_temp_3: null, 
+            hourly_temp_3: null,
             hourly_icon_3: null,
-            hourly_temp_4: null, 
+            hourly_temp_4: null,
             hourly_icon_4: null,
-            hourly_temp_5: null, 
+            hourly_temp_5: null,
             hourly_icon_5: null,
-            hourly_temp_6: null, 
+            hourly_temp_6: null,
             hourly_icon_6: null,
-            hourly_temp_7: null, 
+            hourly_temp_7: null,
             hourly_icon_7: null,
-            hourly_temp_8: null, 
+            hourly_temp_8: null,
             hourly_icon_8: null,
         })
     }
